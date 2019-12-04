@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-3.4.1.min.js"></script>
+	<style>
+		.box{
+			  width: 100px;
+			  height: 100px;
+			  background: #0f0;
+			  position: absolute;
+			  left: 0px;
+		}
+	</style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+</html>
+<script>
+	$(".box").mouseover(function(){
+	$(this).animate({left:"500px",bottom:"300px",width:"200px"},2000,function(){
+		$(this).animate({left:"0px",bottom:"0px",width:"100px;"},100)
+	});
+     });
+</script>
